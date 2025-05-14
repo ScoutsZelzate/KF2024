@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang='nl'>
+
+<head>
+    <title>Katse Feesten - Line-Up</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/KF_oog_icon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu" id="menu">
+            <a class="burger" id="menu-closed-icon"><i class="fa fa-bars"></i></a>
+            <p id="menu-closed-text">Menu</p>
+
+            <a class="burger invisible" id="menu-opened-icon"><i class="fa fa-times"></i></a>
+            <p class="invisible" id="menu-opened-text">Sluit</p>
+
+        </div>
+        <div class="logo">
+            <p>KATSE</p>
+            <a href="index"><img class="logo-image" src="img/KF_ogen.png"></a>
+            <p>FEESTEN</p>
+        </div>
+        <div class="info">
+            <div class="info-top">
+                <p>1 t.e.m. 5 Augustus</p>
+                <p>Scoutsterrein</p>
+            </div>
+            <div class="info-bottom">
+                <p>Assenedesteenweg 245b, Zelzate</p>
+            </div>
+        </div>
+        <div class="burger-menu" id="burger">
+            <div class="burger-menu-container">
+                <div class="burger-menu-container-column">
+                    <div class="burger-menu-container-title">
+                        <p>Programma</p>
+                    </div>
+                    <div class="burger-menu-container-option">
+                        <p class="active-route">Line-Up</p>
+                        <a href="timetable">
+                            <p>Timetable</p>
+                        </a>
+                        <a href="comedy">
+                            <p>Comedy - Tickets</p>
+                        </a>
+                        <a href="tropicalterras">
+                            <p>Tropical Terras</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="burger-menu-container-column">
+                    <div class="burger-menu-container-title">
+                        <p>Over</p>
+                    </div>
+                    <div class="burger-menu-container-option">
+                        <a href="info">
+                            <p>Info</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="burger-menu-container-column">
+                    <div class="burger-menu-container-title">
+                        <p>Partners</p>
+                    </div>
+                    <div class="burger-menu-container-option">
+                        <a href="vrienden">
+                            <p>Vrienden</p>
+                        </a>
+                        <a href="sponsors">
+                            <p>Sponsors</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img src="img/footer.png">
+        </div>
+    </header>
+
+
+    <section class="spacer"></section>
+    <section class="spacer"></section>
+    <section class="spacer"></section>
+
+    <div id="modal" class="modal invisible">
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <div class="modal-content-image"><img id="modal-image" src=""></div>
+            <div class="modal-content-text">
+                <h1 class="modal-content-text-title" id="modal-title"></h1>
+                <h4 class="modal-content-text-description" id="modal-description"></h4>
+            </div>
+
+            <div class="modal-content-background">
+                <img src="img/footer.png">
+            </div>
+
+
+        </div>
+    </div>
+
+    <section class="card-container" id="Menu">
+        <h1 class="card-container-title">Line-Up</h1>
+        <br>
+
+
+        <!-- <div class="card-inner-container">
+
+            <div id="NAFT" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_NAFT.png">
+            </div>
+
+            <div id="AdmiralFreebee" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_AdmiralFreebee.png">
+            </div>
+
+            <div id="Fabiow" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_Fabiow.png">
+            </div>
+
+            <div id="TheMackenzie" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_TheMackenzie.png">
+            </div>
+
+            <div id="U2be" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_U2be.png">
+            </div>
+
+            <div id="FlavourDrop" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_FlavourDrop.png">
+            </div>
+
+            <div id="InYourHonour" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_InYourHonour.png">
+            </div>
+
+            <div id="Emjie" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_Emjie.png">
+            </div>
+
+            <div id="JeroenDeLodder" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_JeroenDelodder.png">
+            </div>
+
+            <div id="RedD" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_RedD.png">
+            </div>
+
+            <div id="PIV" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_PIV.png">
+            </div>
+
+            <div id="IskanderMoon" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_IskanderMoon.png">
+            </div>
+
+            <div id="DavidGalle" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_DavidGalle.png">
+            </div>
+
+            <div id="LisaJordens" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_LisaJordens.png">
+            </div>
+
+            <div id="Semmer" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_Semmer.png">
+            </div>
+
+            <div id="Seghers" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_Seghers.png">
+            </div>
+
+            <div id="Boskat" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_Boskat.png">
+            </div>
+
+            <div id="JoostVanHyfteMC" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_JoostVanHyfteMC.png">
+            </div>
+
+            <div id="Karakals" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_Karakals.png">
+            </div>
+
+            <div id="The925" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_The925.png">
+            </div>
+
+            <div id="MysteryGuestComedy" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_MysteryGuestComedy.png">
+            </div>
+
+            <div id="Sounder" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_Sounder.png">
+            </div>
+
+            <div id="MoonshineReunion" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_MoonshineReunion.png">
+            </div>
+
+            <div id="Kinderspeeldorp" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_Kinderspeeldorp.png">
+            </div>
+
+            <div id="StevesPlanet" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_StevesPlanet.png">
+            </div>
+
+            <div id="GoePoeier" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_GoePoeier.png">
+            </div>
+
+            <div id="Kootsj" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2024/Artist_Kootsj.png">
+            </div>
+
+            <div id="GRM" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2024/Artist_GRM.png">
+            </div>
+
+        </div> -->
+
+        <h2 class="card-container-subtitle">Coming Soon</h2>
+        <!--
+        <div class="card-inner-container">
+
+            <div id="lestruttes" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_lestruttes.png">
+            </div>
+
+            <div id="jeroendelodder" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_jeroendelodder.png">
+            </div>
+
+            <div id="nadiemshah" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_nadiemshah.png">
+            </div>
+
+            <div id="jackvamp" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_jackvamp.png">
+            </div>
+
+            <div id="ninablack" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_ninablack.png">
+            </div>
+
+            <div id="willyorgan" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_willyorgan.png">
+            </div>
+
+            <div id="stijn" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_stijn.png">
+            </div>
+
+            <div id="flavourdrop" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_flavourdrop.png">
+            </div>
+
+            <div id="mothermercury" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_mothermercury.png">
+            </div>
+
+            <div id="sea" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_sea.png">
+            </div>
+
+            <div id="fleetmood" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_fleetmood.png">
+            </div>
+
+            <div id="joostvanhyfte" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_joostvanhyfte.jpg">
+            </div>
+
+            <div id="seghers" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_seghers.jpg">
+            </div>
+
+            <div id="hanscools" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_hanscools.png">
+            </div>
+
+            <div id="janvervloet" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_janvervloet.jpg">
+            </div>
+
+            <div id="blousebelge" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_blousebelge.jpg">
+            </div>
+
+            <div id="vincentvoeten" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_vincentvoeten.jpg">
+            </div>
+
+            <div id="kinderspeeldorp" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_kinderspeeldorp.jpg">
+            </div>
+
+            <div id="radiozigzag" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_radiozigzag.jpg">
+            </div>
+
+            <div id="sounder" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_sounder.jpg">
+            </div>
+
+            <div id="guyverlinde" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_guyverlinde.png">
+            </div>
+
+            <div id="grm" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_grm.png">
+            </div>
+
+            <div id="tuffquac" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_tuffguac.png">
+            </div>
+
+            <div id="herrman" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_herrman.jpg">
+            </div>
+
+            <div id="mohsinabbas" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_mohsinabbas.jpg">
+            </div>
+
+            <div id="tommassis" class="cardholder cardholder-lefttilt">
+                <img class="card-image" src="img2023/artist_tommassis.jpg">
+            </div>
+
+            <div id="truckstopcutie" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_truckstopcutie.png">
+            </div>
+
+            <div id="yanx" class="cardholder cardholder-righttilt">
+                <img class="card-image" src="img2023/artist_yanx.jpg">
+            </div>
+
+        </div>
+        -->
+
+    </section>
+
+
+
+
+    <!-- <section class="filler">
+    </section> -->
+
+
+
+
+
+    <!-- <section class="card-container" id="Menu">
+        <h2 class="card-container-subtitle">More to be announced soon...</h2>
+    </section> -->
+
+    <!--
+    <section class="bottom" id="bottom">
+        <img src="img/footer.png">
+    </section>-->
+
+    <script src="https://kit.fontawesome.com/07f8823142.js" crossorigin="anonymous"></script>
+    <script src="burger.js"></script>
+    <!-- TODO: UNCOMMENT!!!!!! -->
+    <!-- <script src="modal.js"></script> -->
+</body>
+
+<footer>
+    <img src="img/2022_KF_IllustratieWeb_72dpi.png">
+    <div class="footer-content">
+        <div class="footer-contact">
+            <p class="footer-contact-content">
+                Katse Feesten vzw <br>
+                Assenedesteenweg 245b <br>
+                9060 Zelzate <br>
+                katsefeesten@live.be <br>
+            </p>
+        </div>
+        <div class="copyright">
+            <div class="copyright-part">
+                <p>© Katse Feesten 2025</p>
+                <!--
+            <p>|</p>
+            <a href="privacyverklaringKF.pdf" download><p>Privacyverklaring</p></a>
+            <p></p>-->
+            </div>
+            <div class="copyright-part">
+                <p>Webdesign by Stef Claeyssens</p>
+                <p>|</p>
+                <p>Graphics by Fiebe De Muynck</p>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <p class="footer-contact-content">
+                <a href="https://www.facebook.com/KatseFeesten/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/katsefeesten/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/watch?v=4U7ypuLMyf4"><i class="fab fa-youtube"></i></a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+</html>
